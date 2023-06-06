@@ -5,22 +5,22 @@
 class GitCommitTemplate < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.0/git-commit-template_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3c2cedd90a23748b6d5eac5e1fe47d0c86598b7b32c832ef6d958a529c279f14"
+      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.1/git-commit-template_0.1.1_darwin_arm64.tar.gz"
+      sha256 "1d54710b02cdfdf584233b3c585381ecb92f6ff6396e949b92ad3da2ec139e11"
 
       def install
         bin.install "git-commit-template"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.0/git-commit-template_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cd1ab7fe84e85e55e1e8ecf14091e10eff017072a480bd0547636dddf19aed99"
+      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.1/git-commit-template_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f9becae7c984e457343120e4ea4ba9d7399ccb8b189ec1831296f093a9a5007e"
 
       def install
         bin.install "git-commit-template"
@@ -30,16 +30,16 @@ class GitCommitTemplate < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.0/git-commit-template_0.1.0_linux_arm64.tar.gz"
-      sha256 "2e4a7406943d9b346efe204522859b99ca18c6b9857d2dcbf1c72e446cee2c7d"
+      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.1/git-commit-template_0.1.1_linux_arm64.tar.gz"
+      sha256 "a7f4002d820924ff9162a889f4958c9c9cd3172033843404cc1a065a3bd08ea8"
 
       def install
         bin.install "git-commit-template"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.0/git-commit-template_0.1.0_linux_amd64.tar.gz"
-      sha256 "07afc8a4a7c5f851c85336c212d6a9e18a77e198a2195b35b38f382d151bfea3"
+      url "https://github.com/carhartl/git-commit-template/releases/download/v0.1.1/git-commit-template_0.1.1_linux_amd64.tar.gz"
+      sha256 "fee88a197f0a239a57887d110d94d14ff9519378b1d26423e687dfc91d075518"
 
       def install
         bin.install "git-commit-template"
