@@ -5,20 +5,20 @@
 class GitWip < Formula
   desc ""
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     on_intel do
-      url "https://github.com/carhartl/git-wip/releases/download/v0.0.5/git-wip_0.0.5_darwin_amd64.tar.gz"
-      sha256 "d4a4db0b88b19582973b73df691d0c878f42ad879e847d0e3ec4e60ed728e30f"
+      url "https://github.com/carhartl/git-wip/releases/download/v0.0.6/git-wip_0.0.6_darwin_amd64.tar.gz"
+      sha256 "755f58be9be99eaa62ef93a9bcaa4302f3058275d8c78e6fdb1c1b1fddb5e429"
 
       def install
         bin.install "git-wip"
       end
     end
     on_arm do
-      url "https://github.com/carhartl/git-wip/releases/download/v0.0.5/git-wip_0.0.5_darwin_arm64.tar.gz"
-      sha256 "d18cfccd6af56969844d0de738a6c1b6f3c2d4113918a9fc03dd29f0b25262ad"
+      url "https://github.com/carhartl/git-wip/releases/download/v0.0.6/git-wip_0.0.6_darwin_arm64.tar.gz"
+      sha256 "e24449db0f69090ee70f3f11b97ab631afb166b4c4804e8eb90ab14874ce475c"
 
       def install
         bin.install "git-wip"
@@ -29,8 +29,8 @@ class GitWip < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/carhartl/git-wip/releases/download/v0.0.5/git-wip_0.0.5_linux_amd64.tar.gz"
-        sha256 "6f78d9d4a9c9873064579374c9a1e092a8fe287af197857b69ec2c08a4471bd9"
+        url "https://github.com/carhartl/git-wip/releases/download/v0.0.6/git-wip_0.0.6_linux_amd64.tar.gz"
+        sha256 "68d635173e2538a563de730ed8defac6a4c14f359ba02a5d186dfcb172ac95ee"
 
         def install
           bin.install "git-wip"
@@ -39,8 +39,8 @@ class GitWip < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/carhartl/git-wip/releases/download/v0.0.5/git-wip_0.0.5_linux_arm64.tar.gz"
-        sha256 "3554a7802f59c9558bb267de653eaadf72026ac55ed255d648370c12392ab5ac"
+        url "https://github.com/carhartl/git-wip/releases/download/v0.0.6/git-wip_0.0.6_linux_arm64.tar.gz"
+        sha256 "b6acbfdb7752af3348fdd31d5e85628e8deb5fb408cb1f0a2074b6ad20794172"
 
         def install
           bin.install "git-wip"
